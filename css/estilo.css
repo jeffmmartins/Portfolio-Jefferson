@@ -1,0 +1,254 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+ 
+}
+a{
+  color: white; /* cor do texto padrão */
+  text-decoration: none; /* removendo sublinhado padrão */
+  transition: color 0.5s ease;
+}
+
+body{
+  background-color: black;
+  color: white;
+}
+
+
+
+
+header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  
+  
+}
+
+/* -- ESTILIZANDO NAVEGAÇÃO -- */
+.navegacao {
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: rgb(27, 27, 27);
+}
+
+
+.navegacao ul {
+  display: flex;
+ justify-content: space-around;
+ align-items: center;
+ list-style: none;
+ padding:  0px 15px 0px 15px;
+ 
+}
+
+.navegacao ul li a{
+  text-decoration: none;
+  font-size: large;
+  font-style: initial;
+
+}
+
+a:hover{
+ cursor: pointer;
+ color: orangered;
+ 
+}
+
+/* -- ESTILIZANDO PARTE PRINCIPAL -- */
+
+.formalizacaoparagrafo {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.principal{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.principalFonte {
+  font-size: 20px;
+  font-weight: bolder;
+  font-style: oblique;
+  text-align:center;
+  border-radius: 20px;
+  transition: color 0.5s ease;
+  border-right: 1px solid red;
+  border-left: 1px solid red;
+  padding: 5px;
+}
+
+.foto{
+  
+  width: 300px;
+  height: 350px;
+  margin-bottom: 40px;
+  
+}
+
+/* Estilizando Projetos */
+
+.projetos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projetos p {
+  color: whitesmoke;
+  font-size: xx-large;
+  font-weight: bolder;
+  border-bottom: 1px solid orangered;
+}
+
+.repositorio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.meusprojetos {
+  height: 445px;
+  width: 350px;
+  padding: 5px;
+  margin-top: 150px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 9px 1px white;
+  background-color: rgb(17, 17, 17);
+}
+
+.meusprojetos h2{
+  text-align: center;
+}
+
+.meusprojetos p{
+  text-align: start;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.imagemprevtempo{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-top: 5px;
+ margin-bottom: 5px;
+}
+
+
+.habilidades{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 110px;
+  
+}
+
+/* Estilizado Habilidades */
+
+.habilidades p {
+  color: whitesmoke;
+  font-size: xx-large;
+  font-weight: bolder;
+  border-bottom: 1px solid orangered;
+}
+
+.conteudo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap: 120px;
+}
+
+.conteudo img {
+  width: 235px;
+  height: 235px;
+}
+
+.conteudo p{
+  text-align: center;
+  font-size: 1.5em;
+}
+
+/* -- Estilizano Rodapé --*/
+footer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+  background-color:white;
+  border-radius: 20px 20px 0px 0px;
+  padding: 3px;
+}
+
+footer a img{
+  width: 50px;
+  height: 35px;
+}
+
+footer a:hover {
+  cursor: pointer;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 1020px){
+  /*Barra de navegação*/
+  
+  .navegacao {
+   margin-bottom: 80px;
+   background-color: transparent;
+  }
+  
+  .navegacao ul {
+    flex-direction: column; 
+    background-color: rgb(17, 17, 17);
+  }
+
+  
+ 
+  /* Conteudo Principal */
+
+  .principal{
+    flex-direction: column-reverse;
+  }
+
+  .principalFonte{
+    margin: 15px;
+    font-size: small;
+  }
+
+  .meusprojetos{
+    margin: 25px;
+  }
+
+  .imagempc{
+    display: none;
+  }
+
+  .conteudo{
+    display: inline;
+    text-align: center;
+   
+  }
+
+  .conteudo img {
+    display: none;
+  }
+
+  .conteudo p {
+    display: inline-block;
+   margin: 10px;
+   background-color: rgb(53, 51, 51);
+   border-radius: 5px;
+  }
+ 
+}
