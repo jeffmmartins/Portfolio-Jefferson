@@ -226,8 +226,15 @@ footer a:hover {
     font-size: small;
   }
 
+  .foto{
+  margin-bottom: 40px;
+  margin-left: -30px;   
+  }
+
   .meusprojetos{
     margin: 25px;
+    height: 470px;
+    width: 350px;
   }
 
   .imagempc{
