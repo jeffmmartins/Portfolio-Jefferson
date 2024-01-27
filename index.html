@@ -15,32 +15,22 @@
     <!-- Barra de navegação-->
       <div class="navegacao"> 
         <nav>
-          <ul>
-            <div>
-              <li>
-                <a href="index.html">Início</a>
-              </li>
-            </div>
-            <div>
-              <li>
-                <a href="#sobremim">Sobre Mim</a>
-              </li>
-            </div>
-            <div>
-              <li>
-                <a href="#projeto">Projetos</a>
-              </li>
-            </div>
-            <div>
-              <li>
-                <a href="#habilidade">Habilidades</a>
-              </li>
-            </div> 
-            <div>
-              <li>
-                <a  onclick="abrirJanela()" href="">Exercícios em JS</a>
-              </li>
-            </div>  
+          <ul>           
+            <li>
+              <a href="index.html">Início</a>
+            </li>
+            <li>
+              <a href="#sobremim">Sobre Mim</a>
+            </li>            
+            <li>
+              <a href="#projeto">Projetos</a>
+            </li>         
+            <li>
+              <a href="#habilidade">Habilidades</a>
+            </li>           
+            <li>
+              <a  onclick="abrirJanela()" href="">Exercícios em JS</a>
+            </li>             
           </ul>
         </nav>
       </div>
@@ -49,57 +39,83 @@
       <!--Conteúdo Principal-->
 
   <main >
-    <h1 id="titulo" class="formalizacaoparagrafo">Portfólio <<span style="color: orangered;">Jeff</span>/></h1> 
-    <div class="principal" id="sobremim">
-        <img class="imagempc" src="imagens/computador.png"  style="width: 260px; height: 200px;" alt="" >
-        <div class="principalFonte" id="fonte" onmouseover="modifica('rgb(17, 17, 17)')">
+    <h1  class="formalizacao-paragrafo">Portfólio 
+      <span class="cor-texto">Jeff</span>
+    </h1> 
+    <div class="principal" id="sobre-mim">
+        <div class="principal-fonte">
           <h1>
             Olá,
             <br>
-            Eu sou o Jefferson <span style="color: orangered;">Martins</span> 
+            Eu sou o Jefferson <span class="cor-texto">Martins</span> 
           </h1>
           <p> Tenho 35 anos, estou buscando oportunidades para atuar como desenvolvedor</p>
           <p> 👨🏻‍🎓 Cursando Análise e Desenvolvimento de Sistemas</p>
           <p> 🔎 Buscando oportunidades para desenvolver meus conhecimentos</p>
-          <p> 💡 Interesse em Desenvolvimento Front-End e Back-End</p>
-          <p> <a href="https://github.com/jeffmmartins">Github</a> </p>
+          <p> 💡 Interesse em Desenvolvimento Front-End </p>
+          <p> <a href="https://github.com/jeffmmartins"> &#128073 Github</a> </p>
         </div>
         <div class="foto">
           <img src="imagens/foto.png"  alt="avatar">
         </div>
     </div>
 
+       <!--Meus Projetos-->
+
     <section id="projeto">
-      <div class="projetos">
-        
-        <p> < Projetos /> </p>
-        
+      <div class="projetos"> 
+        <p>  Projetos </p> 
       </div>
       <div class="repositorio">
-        <div class="meusprojetos">
+        <div class="meus-projetos">
           <h2>Previsão do Tempo</h2>
-          <div class="imagemprevtempo">
-            <a href="https://jeffmmartins.github.io/previsao-do-tempo/"><img src="imagens/previsao do Tempo.jpeg" style="width: 280px; height: 230px;" alt="imagem prev. tempo"></a>
+          <div class="imagem-projeto">
+            <a href="https://jeffmmartins.github.io/previsao-do-tempo/">
+              <img src="imagens/previsao do Tempo.jpeg"  alt="imagem prev. tempo">
+            </a>
           </div>
           <p>Projeto que desenvolvi minhas habilidades com HTML, JavaScript e CSS,
             que permite a pesquisa de como está o a previsão do tempo nas cidades.
-            <p>Repositório no GitHub: <a href="https://github.com/jeffmmartins/previsao-do-tempo">Clique aqui</a></p>
+            <p>Repositório no GitHub: 
+              <a href="https://github.com/jeffmmartins/previsao-do-tempo">Clique aqui</a>
+            </p>
           </p>
           
-          <img src="imagens/css.png" style="width: 40px; height: 40px;" alt="css">
-          <img src="imagens/js.png" style="width: 65px; height: 40px;" alt="javascript">
-          <img src="imagens/html.png" style="width:35px; height: 40px;" alt="html">
+          <img src="imagens/ccs-menor.png"  alt="css">
+          <img src="imagens/js-menor.png"  alt="javascript">
+          <img src="imagens/html-menor.png"  alt="html">
+        </div>
+
+        <div class="meus-projetos">
+          <h2>Achados Esplêndidos</h2>
+          <div class="imagem-projeto">
+            <a href="https://jeffmmartins.github.io/Projeto-Loja-Afiliado/">
+              <img src="imagens/loja-achados.jpeg"  alt="Achados">
+            </a>
+          </div>
+          <p>Projeto onde desenvolvi minhas habilidades com HTML, JavaScript e CSS,
+            Minha loja como afiliado da Shopee.
+            <p>Repositório no GitHub: 
+              <a href="https://github.com/jeffmmartins/Projeto-Loja-Afiliado">Clique aqui</a>
+            </p>
+          </p>
+          
+          <img src="imagens/ccs-menor.png"  alt="css">
+          <img src="imagens/js-menor.png"  alt="javascript">
+          <img src="imagens/html-menor.png"  alt="html">
         </div>
       </div>
     </section>
 
+       <!--Habilidades-->
+
     <section id="habilidade">
       <div class="habilidades">
-        <p> < Habilidades /></p>
+        <p>  Habilidades </p>
       </div>
       <div class="conteudo">
         <div>
-          <img src="imagens/html.png"  style="width: 210px; height: 210px;" alt="">
+          <img src="imagens/html.png"   alt="">
           <p>HTML</p>
         </div>
         <div>
@@ -117,9 +133,21 @@
       <!--Rodapé-->
       
   <footer>
-    <div><a href="mailto:jeffersonmartinsmendes@gmail.com"><img src="imagens/email.jpg"  alt="e-mail"></a></div>
-    <div><a href="https://www.linkedin.com/in/jefferson-martins-mendes/"><img src="imagens/linkedin.png"  alt="linkedin"></a></div>
-    <div><a href="https://github.com/jeffmmartins"><img src="imagens/git.png"  alt="github"></a></div>
+    <div>
+      <a href="mailto:jeffersonmartinsmendes@gmail.com">
+        <img src="imagens/email.jpg"  alt="e-mail">
+      </a>
+    </div>
+    <div>
+      <a href="https://www.linkedin.com/in/jefferson-martins-mendes/">
+        <img src="imagens/linkedin.png"  alt="linkedin">
+      </a>
+    </div>
+    <div>
+      <a href="https://github.com/jeffmmartins">
+        <img src="imagens/git.png"  alt="github">
+      </a>
+    </div>
   </footer>
 
   <script src="js/app.js"></script>
