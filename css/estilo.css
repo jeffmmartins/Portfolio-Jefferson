@@ -253,6 +253,12 @@ footer a:hover {
     width: 350px;
   }
 
+  .imagem-projeto img{
+    width: 160px;
+    height: 200px;
+    border-radius: 30px;
+  }
+
   .repositorio {
     flex-direction: column;
   }
