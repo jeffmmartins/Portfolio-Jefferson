@@ -1,283 +1,279 @@
-*{
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
-
-}
-a{
-  color: black; /* cor do texto padrão */
-  text-decoration: none; /* removendo sublinhado padrão */
-  transition: color 0.5s ease;
+  font-family: "Open Sans", sans-serif;
 }
 
-body{
-  background-color: beige;
-  color: black;
+html,
+body {
+  background-color: #333439;
+  box-sizing: border-box;
 }
 
-header{
-  width: 100%;
+/*--------- Estilização do cabeçalho e navbar ----------*/
+.header {
+  background-color: #333439;
+  padding-left: 20px;
+}
+
+.nav h1 {
+  color: #dedfe4;
+}
+
+.nav span {
+  color: #d19f4a;
+}
+
+.nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;   
-}
-
-/* -- ESTILIZANDO NAVEGAÇÃO -- */
-.navegacao {
-  width: 100%;
-  height: 25px;
-  margin-bottom: 20px;
-  background-color: rgb(27, 27, 27);
-  padding-top: 15px;
-}
-
-.navegacao ul {
-  display: flex;
- justify-content: space-around;
- align-items: center;
- list-style: none;
- padding:  0px 15px 0px 15px;
- 
-}
-
-.navegacao ul li a{
-  text-decoration: none;
-  font-size: large;
-  font-style: initial;
-  color: white;
-}
-
-
-
-a:hover{
- cursor: pointer;
- color: orangered;
-}
-
-/* -- ESTILIZANDO CONTEÚDO PRINCIPAL -- */
-
-
-
-.formalizacao-paragrafo {
-  text-align: center;
-  margin-bottom: 40px;
-  margin-top: 40px;  
-}
-
-.cor-texto{
-  color: orangered;
-}
-
-.principal{
-  display: flex;
-  justify-content: space-around;
   align-items: center;
-  margin-bottom: 70px;
+  padding-top: 10px;
 }
 
-.principal-fonte {
-  font-size: 19px;
-  font-weight: bolder;
-  font-style: oblique;
-  text-align:center;
-  border-radius: 20px;
-  transition: color 0.5s ease;
-  border-right: 1px solid red;
-  border-left: 1px solid red;
-  padding: 5px;
-}
-
-.foto{
-  
-  width: 300px;
-  height: 350px;
-  margin-bottom: 40px;  
-}
-
-/* Estilizando Projetos */
-
-.projetos{
+.nav-list {
   display: flex;
   justify-content: center;
   align-items: center;
+  list-style: none;
 }
 
-.projetos p {
-  color: black;
-  font-size: xx-large;
+.nav-list li {
+  padding: 0px 50px 0px 50px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #dedfe4;
+}
+
+.link:hover {
+  cursor: pointer;
+  color: #d19f4a;
+  transition: color 0.5s ease;
+}
+
+.hamburguer {
+  display: none;
+  border: none;
+  background: none;
+  border-top: 3px solid #fff;
+  cursor: pointer;
+}
+
+.hamburguer::before,
+.hamburguer::after {
+  content: " ";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  margin-top: 5px;
+}
+
+/*---------- Estilização do conteúdo principal ---------- */
+
+#container-principal {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  flex-wrap: wrap;
+  background-color: #333439;
+}
+
+.cor-texto {
+  color: #dedfe4;
+}
+
+.titulo-principal {
   font-weight: bolder;
-  border-bottom: 1px solid orangered;
 }
 
-.repositorio {
+.nome {
+  color: #d19f4a;
+  font-size: 70px;
+}
+
+.cor-texto a {
+  text-decoration: none;
+  color: #dedfe4;
+  font-style: italic;
+}
+
+#link-github:hover {
+  cursor: pointer;
+  color: #d19f4a;
+  transition: color 0.5s ease;
+}
+
+/*---------- Estilizando a seção dos Projetos ----------*/
+
+#projetos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 30px;
+  background-color: #2c2d32;
+  color: #dedfe4;
+}
+
+.texto-titulos {
+  font-size: 25px;
+  border-bottom: 3px solid #d19f4a;
+}
+
+#repositorio {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 60px;
+  gap: 50px;
 }
 
 .meus-projetos {
-  height: 550px;
+  height: 500px;
   width: 380px;
   padding: 5px;
-  margin-top: 150px;
+  margin-top: 40px;
   border-radius: 20px;
-  box-shadow: 1px 1px 9px 1px black;
-  background-color:white;
+  box-shadow: 1px 1px 1px 1px #d19f4a;
+  background-color: #333439;
 }
 
-.meus-projetos h2{
+.alinhamento-texto {
   text-align: center;
 }
 
-.meus-projetos p{
-  text-align: start;
-  font-size: 18px;
+.imagem-projeto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
   margin-bottom: 5px;
 }
-.imagem-projeto{
- display: flex;
- justify-content: center;
- align-items: center;
- margin-top: 5px;
- margin-bottom: 5px;
-}
 
-.imagem-projeto img{
+.imagem-projeto img {
   width: 220px;
   height: 300px;
   border-radius: 30px;
 }
 
-.btn-link{
-  background-color: rgb(150, 150, 156);
+.btn-link {
+  background-color: #d19f4a;
   border-radius: 5px;
+  color: #dedfe4;
 }
 
-.btn-link a{
- color: black;
- padding: 5px;
- font-weight: bold
-} 
-
-.skills{
-  margin: 6px;
-  text-align: center;
-}
-
-/* Estilizado Habilidades */
-.habilidades{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 110px; 
-}
-
-
-
-.habilidades p {
+.btn-link a {
   color: black;
-  font-size: xx-large;
-  font-weight: bolder;
-  border-bottom: 1px solid orangered;
+  padding: 5px;
+  font-weight: bold;
 }
 
-.conteudo{
+/*---------- Estilização de Habilidades ----------*/
+#habilidades {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
-  gap: 120px;
+  flex-direction: column;
+  background-color: #333439;
+  color: #dedfe4;
 }
 
-.conteudo p{
-  text-align: center;
-  font-size: 1.5em;
-}
-
-/* -- Estilizano Rodapé --*/
-footer{
+#conteudo-habilidades {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  margin-top: 50px;
-  background-color:white;
-  border-radius: 20px 20px 0px 0px;
-  padding: 3px;
+  width: 100%;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+  gap: 20px;
 }
 
-footer a img{
-  width: 50px;
-  height: 35px;
+.minhas-habilidades {
+  height: 80px;
+  width: 80px;
+  padding: 5px;
+  margin: 30px 0px 10px 0px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px 1px #d19f4a;
+  background-color: #333439;
 }
 
-footer a:hover {
-  cursor: pointer;
+/*---------- Rodapé ----------*/
+#rodape {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: #2c2d32;
+  color: #dedfe4;
 }
 
-/* Media Query */
+#contato {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 50px;
+}
 
-@media screen and (max-width: 1020px){
-   
-  /*Barra de navegação*/
-  
-  .navegacao {
-   margin-bottom: 80px;
-  }
-  
-  .navegacao ul {
-    flex-direction: column; 
-    background-color: rgb(4, 4, 4);
-  }
- 
-  /* Conteudo Principal */
-
-  .principal{
-    flex-direction: column-reverse;
+/*---------- MEDIA QUERY ----------*/
+@media screen and (max-width: 750px) {
+  html,
+  body {
+    overflow-x: hidden;
+    box-sizing: border-box;
   }
 
-  .principal-fonte{
-    margin: 15px;
-    font-size: small;
+  /* --------- navbar ------------*/
+  .header {
+    height: 125px;
+    padding: 10px 20px 0px 20px;
   }
 
-  .foto{
-  margin-bottom: 40px;
-  margin-left: -30px;   
+  .hamburguer {
+    display: block;
   }
 
-  .meus-projetos{
-    margin: 0 10px 0 10px;
-    height: 500px;
-    width: 350px;
-  }
-
-  .imagem-projeto img{
-    width: 160px;
-    height: 200px;
-    border-radius: 30px;
-  }
-
-  .repositorio {
+  .nav-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 20vh;
+    background-color: #333439;
+    clip-path: circle(0px at 90% -15%);
+    transition: 1s ease-out;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+    pointer-events: none;
   }
 
-
-  .conteudo{
-    display: inline;                                            
-    text-align: center;
-   
+  .nav.active .nav-list {
+    clip-path: circle(1500px at 90% -15%);
+    pointer-events: all;
   }
 
-  .conteudo img {
-    display: none;
+  /* --------------- main ----------------*/
+  #container-principal {
+    padding: 10px 20px 20px 20px;
   }
 
-  .conteudo p {
-    display: inline-block;
-   margin: 10px;
-   border-radius: 5px;
+  .meus-projetos {
+    height: 500px;
+    width: 345px;
+    padding: 5px;
+    margin-top: 40px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px #d19f4a;
+    background-color: #333439;
   }
- 
 }

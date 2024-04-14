@@ -1,4 +1,5 @@
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,202 +7,188 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Portfólio - Jeff</title>
+  <script defer src="js/app.js"></script>
 </head>
-<body >
-      <!--Cabeçalho-->
-  <header >
-    <!-- Barra de navegação-->
-      <div class="navegacao"> 
-        <nav>
-          <ul>           
-            <li>
-              <a href="index.html">Início</a>
-            </li>
-            <li>
-              <a href="#sobremim">Sobre Mim</a>
-            </li>            
-            <li>
-              <a href="#projeto">Projetos</a>
-            </li>         
-            <li>
-              <a href="#habilidade">Habilidades</a>
-            </li>           
-            <li>
-              <a  onclick="abrirJanela()" href="">Exercícios em JS</a>
-            </li>             
-          </ul>
-        </nav>
-      </div>
+
+<body>
+  <!--Cabeçalho-->
+  <header class="header">
+    <nav class="nav">
+      <h1>Portfólio <span>Jeff</span></h1>
+      
+     <button class="hamburguer">
+     </button>
+
+      <ul class="nav-list">
+        <li>
+          <a class="link" href="index.html">Início</a>
+        </li>
+        <li>
+          <a class="link" href="#projetos">Projetos</a>
+        </li>
+        <li>
+          <a class="link" href="#habilidades">Habilidades</a>
+        </li>
+        <li>
+          <a class="link" onclick="abrirJanela()" href="">Exercícios em JS</a>
+        </li>
+        <li>
+          <a class="link" href="#rodape">Contato</a>
+        </li>
+    </nav>
   </header>
 
-      <!--Conteúdo Principal-->
+  <!--Conteúdo Principal-->
+  <main>
 
-  <main >
-    <h1  class="formalizacao-paragrafo">Portfólio 
-      <span class="cor-texto">Jeff</span>
-    </h1> 
-    <div class="principal" id="sobre-mim">
-        <div class="principal-fonte">
-          <h1>
-            Olá,
-            <br>
-            Eu sou o Jefferson <span class="cor-texto">Martins</span> 
-          </h1>
-          <p> Tenho 35 anos, estou buscando oportunidades para atuar como desenvolvedor</p>
-          <p> 👨🏻‍🎓 Cursando Análise e Desenvolvimento de Sistemas</p>
-          <p> 🔎 Buscando oportunidades para desenvolver meus conhecimentos</p>
-          <p> 💡 Interesse em Desenvolvimento Front-End </p>
-          <p> <a href="https://github.com/jeffmmartins"> &#128073 Github</a> </p>
-        </div>
-        <div class="foto">
-          <img src="imagens/foto.png"  alt="avatar">
-        </div>
-    </div>
-
-       <!--Meus Projetos-->
-
-    <section id="projeto">
-      <div class="projetos"> 
-        <p>  Projetos </p> 
+    <!--Seção sobre mim-->
+    <section id="container-principal">
+      <div class="cor-texto">
+        <p class="titulo-principal">Eu sou,</p>
+        <h1 class="titulo-principal">
+          <span class="nome">J</span>efferson <span class="nome">M</span>artins
+        </h1>
+        <p> Tenho 35 anos, estou buscando oportunidades para atuar como desenvolvedor</p>
+        <p> 👨🏻‍🎓 Cursando Análise e Desenvolvimento de Sistemas</p>
+        <p> 🔎 Buscando oportunidades para desenvolver meus conhecimentos</p>
+        <p> 💡 Interesse em Desenvolvimento Front-End </p>
+        <p> <a id="link-github" href="https://github.com/jeffmmartins"> &#128073 Github</a> </p>
       </div>
-      <div class="repositorio">
+      <div>
+        <img src="img/foto.png" alt="foto">
+      </div>
+    </section>
+
+    <!--Seção dos Projetos-->
+    <section id="projetos">
+      <div class="texto-titulos">
+        <h1>Projetos</h1>
+      </div>
+
+      <div id="repositorio">
         <div class="meus-projetos">
-          <h2>Previsão do Tempo</h2>
+          <h2 class="alinhamento-texto">Previsão do Tempo</h2>
           <div class="imagem-projeto">
             <a href="https://jeffmmartins.github.io/previsao-do-tempo/">
-              <img src="imagens/previsao do Tempo.jpeg"  alt="imagem prev. tempo">
+              <img src="img/previsao do Tempo.jpeg" alt="imagem prev. tempo">
             </a>
           </div>
-          <p>Projeto que desenvolvi minhas habilidades com HTML, JavaScript e CSS,
-            que permite a pesquisa de como está  a previsão do tempo nas cidades.
-            <p>Repositório no GitHub: 
-              <button class="btn-link">
-                <a href="https://github.com/jeffmmartins/previsao-do-tempo">Clique aqui</a>
-              </button>
-            </p>
+          <p>Projeto que desenvolvi minhas habilidades com HTML, JavaScript e CSS, e a utilização de API
+            que permite a pesquisa de como está a previsão do tempo nas cidades.</p>
+          <p>Repositório no GitHub:
+            <button class="btn-link">
+              <a href="https://github.com/jeffmmartins/previsao-do-tempo">Clique aqui</a>
+            </button>
           </p>
-          
-          <img src="imagens/ccs-menor.png"  alt="css">
-          <img src="imagens/js-menor.png"  alt="javascript">
-          <img src="imagens/html-menor.png"  alt="html">
+          </p>
+
+          <img src="img/icon-css.png" alt="css">
+          <img src="img/icon-js.png" alt="javascript">
+          <img src="img/icon-html.png" alt="html">
         </div>
 
         <div class="meus-projetos">
-          <h2>Achados Esplêndidos</h2>
-          <div class="imagem-projeto">
-            <a href="https://jeffmmartins.github.io/Projeto-Loja-Afiliado/">
-              <img src="imagens/loja-achados.jpeg"  alt="Achados">
-            </a>
-          </div>
-          <p>Projeto onde desenvolvi minhas habilidades com HTML, JavaScript e CSS,
-            Minha loja como afiliado da Shopee.
-            <p>Repositório no GitHub: 
-              <button class="btn-link">
-                <a href="https://github.com/jeffmmartins/Projeto-Loja-Afiliado">Clique aqui</a>
-              </button>
-            </p>
-          </p>
-          
-          <img src="imagens/ccs-menor.png"  alt="css">
-          <img src="imagens/js-menor.png"  alt="javascript">
-          <img src="imagens/html-menor.png"  alt="html">
-        </div>
-
-        <div class="meus-projetos">
-          <h2>To do List</h2>
+          <h2 class="alinhamento-texto">To do List</h2>
           <div class="imagem-projeto">
             <a href="https://jeffmmartins.github.io/Projeto-To-do-list/">
-              <img src="imagens/to-do-list.jpeg"  alt="to-do-list">
+              <img src="img/to-do-list.jpeg" alt="to-do-list">
             </a>
           </div>
           <p>Apliquei meus conhecimentos que desenvolvi até o momento,
             nesse to do list pode incluir tarefas do dia para ajudar na produtividade
-            <p>Repositório no GitHub: 
-              <button class="btn-link">
-                <a href="https://github.com/jeffmmartins/Projeto-To-do-list">Clique aqui</a>
-              </button>
-            </p>
+          <p>Repositório no GitHub:
+            <button class="btn-link">
+              <a href="https://github.com/jeffmmartins/Projeto-To-do-list">Clique aqui</a>
+            </button>
           </p>
-          
-          <img src="imagens/ccs-menor.png"  alt="css">
-          <img src="imagens/js-menor.png"  alt="javascript">
-          <img src="imagens/html-menor.png"  alt="html">
+          </p>
+
+          <img src="img/icon-css.png" alt="css">
+          <img src="img/icon-js.png" alt="javascript">
+          <img src="img/icon-html.png" alt="html">
         </div>
 
         <div class="meus-projetos">
-          <h2>Lista compras da semana</h2>
+          <h2 class="alinhamento-texto">Lista compras da semana</h2>
           <div class="imagem-projeto">
             <a href="https://jeffmmartins.github.io/Compras-da-Semana/">
-              <img src="imagens/Compras-semana.jpeg"  alt="compras-da-semana">
+              <img src="img/Compras-semana.jpeg" alt="compras-da-semana">
             </a>
           </div>
-          <p>Projeto onde posso adicionar produtos para comprar na semana em um  supermercado,
+          <p>Projeto onde posso adicionar produtos para comprar na semana em um supermercado,
             lojas, shopping. Apliquei meus conhecimentos de HTML, CSS, JavaScript e Bootstrap
-            <p>Repositório no GitHub: 
-              <button class="btn-link">
-                <a href="https://github.com/jeffmmartins/Compras-da-Semana">Clique aqui</a>
-              </button>
-            </p>
+          <p>Repositório no GitHub:
+            <button class="btn-link">
+              <a href="https://github.com/jeffmmartins/Compras-da-Semana">Clique aqui</a>
+            </button>
+          </p>
           </p>
 
-          <img class="skills" src="imagens/bootstra-menor.svg"  alt="Bootstrap">
-          <img class="skills" src="imagens/ccs-menor.png"  alt="css">
-          <img class="skills" src="imagens/js-menor.png"  alt="javascript">
-          <img class="skills" src="imagens/html-menor.png"  alt="html">
-         
+          <img src="img/icon-bootsatrap.png" alt="Bootstrap">
+          <img src="img/icon-css.png" alt="css">
+          <img src="img/icon-js.png" alt="javascript">
+          <img src="img/icon-html.png" alt="html">
+
         </div>
       </div>
     </section>
 
-       <!--Habilidades-->
-
-    <section id="habilidade">
-      <div class="habilidades">
-        <p>  Habilidades </p>
+    <!--Seção Habilidades-->
+    <section id="habilidades">
+      <div>
+        <h1 class="texto-titulos">Habilidades</h1>
       </div>
-      <div class="conteudo">
-        <div>
-          <img src="imagens/html.png"   alt="">
+      <div id="conteudo-habilidades">
+        <div class="minhas-habilidades">
+          <img src="img/icon-html.png" alt="html">
           <p>HTML</p>
         </div>
-        <div>
-          <img src="imagens/css.png" alt="">
+        <div class="minhas-habilidades">
+          <img src="img/icon-css.png" alt="css">
           <p>CSS</p>
         </div>
-        <div>
-          <img src="imagens/js.png" alt="">
+        <div class="minhas-habilidades">
+          <img src="img/icon-js.png" alt="javascript">
           <p>JavaScript</p>
         </div>
-        <div>
-          <img src="imagens/bootstrap.svg" alt="">
+        <div class="minhas-habilidades">
+          <img src="img/icon-bootsatrap.png" alt="bootstrap">
           <p>Bootstrap</p>
+        </div>
+        <div class="minhas-habilidades">
+          <img src="img/icon-react.png" alt="react">
+          <p>React</p>
         </div>
       </div>
     </section>
   </main>
 
-      <!--Rodapé-->
-      
-  <footer>
-    <div>
-      <a href="mailto:jeffersonmartinsmendes@gmail.com">
-        <img src="imagens/email.jpg"  alt="e-mail">
-      </a>
-    </div>
-    <div>
-      <a href="https://www.linkedin.com/in/jefferson-martins-mendes/">
-        <img src="imagens/linkedin.png"  alt="linkedin">
-      </a>
-    </div>
-    <div>
-      <a href="https://github.com/jeffmmartins">
-        <img src="imagens/git.png"  alt="github">
-      </a>
+  <!--Rodapé-->
+  <footer id="rodape">
+      <h1 class="texto-titulos">Contato</h1>
+      <div id="contato">
+      <div>
+        <a href="mailto:jeffersonmartinsmendes@gmail.com">
+          <img src="img/icon-email.png" alt="e-mail">
+        </a>
+      </div>
+      <div>
+        <a href="https://github.com/jeffmmartins">
+          <img src="img/icon-github.png" alt="github">
+        </a>
+      </div>
+      <div>
+        <a href="https://www.linkedin.com/in/jefferson-martins-mendes/">
+          <img src="img/icon-linkedln.png" alt="linkedin">
+        </a>
+      </div>
     </div>
   </footer>
 
   <script src="js/app.js"></script>
 </body>
+
+
 </html>
