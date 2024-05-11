@@ -265,6 +265,7 @@ body {
   /* --------------- main ----------------*/
   #container-principal {
     padding: 10px 20px 20px 20px;
+    margin-bottom: 80px;
   }
 
   .meus-projetos {
