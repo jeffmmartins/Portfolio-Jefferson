@@ -235,7 +235,7 @@ body {
   /* --------- navbar ------------*/
   .header {
     height: 125px;
-    margin-right: 100px;
+    
     padding: 10px 20px 0px 20px;
   }
 
@@ -267,7 +267,6 @@ body {
   /* --------------- main ----------------*/
   #container-principal {
     padding: 10px 20px 20px 20px;
-    margin-right: 100px;
     margin-bottom: 120px;
   }
 
@@ -277,7 +276,6 @@ body {
     align-items: center;
     flex-direction: column;
     padding-bottom: 30px;
-    margin-right: 100px;
     background-color: #2c2d32;
     color: #dedfe4;
   }
@@ -297,7 +295,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-right: 105px;
+   
     
     background-color: #333439;
     color: #dedfe4;
@@ -312,7 +310,6 @@ body {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    margin-right: 100px;
     background-color: #2c2d32;
     color: #dedfe4;
   }
