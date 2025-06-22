@@ -10,6 +10,12 @@ function abrirJanela() {
   );
 }
 
+function abrirLinkJava(){
+  window.open(
+    "https://github.com/jeffmmartins/dio-trilha-java"
+  )
+}
+
 
 
 
