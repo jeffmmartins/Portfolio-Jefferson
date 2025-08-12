@@ -1,277 +1,119 @@
 * {
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
 }
 
 html,
 body {
-  background-color: #333439;
-  box-sizing: border-box;
+    background-color: #333439;
+    box-sizing: border-box;
 }
 
 /*--------- Estilização do cabeçalho e navbar ----------*/
 .header {
-  background-color: #333439;
-  padding-left: 20px;
+    background-color: #333439;
+    padding-left: 20px;
 }
 
 .nav h1 {
-  color: #dedfe4;
+    color: #dedfe4;
 }
 
 .nav span {
-  color: #d19f4a;
+    color: #d19f4a;
 }
 
 .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
 }
 
 .nav-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
 }
 
 .nav-list li {
-  padding: 0px 50px 0px 50px;
+    padding: 0px 50px 0px 50px;
 }
 
 .nav-list li a {
-  text-decoration: none;
-  font-size: 18px;
-  text-transform: uppercase;
-  color: #dedfe4;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #dedfe4;
 }
 
 .link:hover {
-  cursor: pointer;
-  color: #d19f4a;
-  transition: color 0.5s ease;
+    cursor: pointer;
+    color: #d19f4a;
+    transition: color 0.5s ease;
 }
 
 .hamburguer {
-  display: none;
-  border: none;
-  background: none;
-  border-top: 3px solid #fff;
-  cursor: pointer;
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #fff;
+    cursor: pointer;
 }
 
 .hamburguer::before,
 .hamburguer::after {
-  content: " ";
-  display: block;
-  width: 30px;
-  height: 3px;
-  background: #fff;
-  margin-top: 5px;
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin-top: 5px;
 }
 
 /*---------- Estilização do conteúdo principal ---------- */
 
 #container-principal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  flex-wrap: wrap;
-  background-color: #333439;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-wrap: wrap;
+    background-color: #333439;
 }
 
 .cor-texto {
-  width: 600px;
-  color: #dedfe4;
+    width: 600px;
+    color: #dedfe4;
 }
 
 .titulo-principal {
-  font-weight: bolder;
+    font-weight: bolder;
 }
 
 .nome {
-  color: #d19f4a;
-  font-size: 70px;
+    color: #d19f4a;
+    font-size: 70px;
 }
 
 .cor-texto a {
-  text-decoration: none;
-  color: #dedfe4;
-  font-style: italic;
+    text-decoration: none;
+    color: #dedfe4;
+    font-style: italic;
 }
 
 #link-github:hover {
-  cursor: pointer;
-  color: #d19f4a;
-  transition: color 0.5s ease;
+    cursor: pointer;
+    color: #d19f4a;
+    transition: color 0.5s ease;
 }
 
 /*---------- Estilizando a seção dos Projetos ----------*/
 
-#projetos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-bottom: 30px;
-  background-color: #2c2d32;
-  color: #dedfe4;
-}
-
-.texto-titulos {
-  font-size: 25px;
-  border-bottom: 3px solid #d19f4a;
-}
-
-#repositorio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 50px;
-}
-
-.meus-projetos {
-  height: 500px;
-  width: 380px;
-  padding: 5px;
-  margin-top: 40px;
-  border-radius: 20px;
-  box-shadow: 1px 1px 1px 1px #d19f4a;
-  background-color: #333439;
-}
-
-.alinhamento-texto {
-  text-align: center;
-}
-
-.imagem-projeto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.imagem-projeto img {
-  width: 220px;
-  height: 300px;
-  border-radius: 30px;
-}
-
-.btn-link {
-  background-color: #d19f4a;
-  border-radius: 5px;
-  color: #dedfe4;
-}
-
-.btn-link a {
-  color: black;
-  padding: 5px;
-  font-weight: bold;
-}
-
-/*---------- Estilização de Habilidades ----------*/
-#habilidades {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #333439;
-  color: #dedfe4;
-}
-
-#conteudo-habilidades {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  flex-wrap: wrap;
-  padding-bottom: 50px;
-  gap: 20px;
-}
-
-.minhas-habilidades {
-  height: 80px;
-  width: 80px;
-  padding: 5px;
-  margin: 30px 0px 10px 0px;
-  border-radius: 20px;
-  box-shadow: 1px 1px 1px 1px #d19f4a;
-  background-color: #333439;
-}
-
-/*---------- Rodapé ----------*/
-#rodape {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  background-color: #2c2d32;
-  color: #dedfe4;
-}
-
-#contato {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-  padding-top: 50px;
-}
-
-/*---------- MEDIA QUERY ----------*/
-@media screen and (max-width: 750px) {
-  html,
-  body {
-    overflow-x: hidden;
-    box-sizing: border-box;
-  }
-
-  /* --------- navbar ------------*/
-  .header {
-    height: 125px;
-    
-    padding: 10px 20px 0px 20px;
-  }
-
-  .hamburguer {
-    display: block;
-  }
-
-  .nav-list {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 20vh;
-    background-color: #333439;
-    clip-path: circle(0px at 90% -15%);
-    transition: 1s ease-out;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    gap: 0;
-    pointer-events: none;
-  }
-
-  .nav.active .nav-list {
-    clip-path: circle(1500px at 90% -15%);
-    pointer-events: all;
-  }
-
-  /* --------------- main ----------------*/
-  #container-principal {
-    padding: 10px 20px 20px 20px;
-    margin-bottom: 120px;
-    margin-top: 30px;
-  }
-
-  #projetos {
+/* O seletor agora inclui as duas seções de projetos */
+#projetos-frontend, #projetos-backend {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -279,39 +121,205 @@ body {
     padding-bottom: 30px;
     background-color: #2c2d32;
     color: #dedfe4;
-  }
+}
 
-  .meus-projetos {
-    height: 570px;
-    width: 250px;
+.texto-titulos {
+    font-size: 25px;
+    border-bottom: 3px solid #d19f4a;
+}
+
+#repositorio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+/* Novo seletor para o repositório de back-end */
+#repositorio-backend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.meus-projetos {
+    height: 500px;
+    width: 380px;
     padding: 5px;
     margin-top: 40px;
     border-radius: 20px;
     box-shadow: 1px 1px 1px 1px #d19f4a;
     background-color: #333439;
-  }
+}
 
-  #habilidades {
+.alinhamento-texto {
+    text-align: center;
+}
+
+.imagem-projeto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.imagem-projeto img {
+    width: 220px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+.btn-link {
+    background-color: #d19f4a;
+    border-radius: 5px;
+    color: #dedfe4;
+}
+
+.btn-link a {
+    color: black;
+    padding: 5px;
+    font-weight: bold;
+}
+
+/*---------- Estilização de Habilidades ----------*/
+#habilidades {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-   
-    
     background-color: #333439;
     color: #dedfe4;
-  }
+}
 
-  .contato {
-    margin-bottom: 10px;
-  }
+#conteudo-habilidades {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    gap: 20px;
+}
 
-  #rodape {
+.minhas-habilidades {
+    height: 80px;
+    width: 80px;
+    padding: 5px;
+    margin: 30px 0px 10px 0px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px #d19f4a;
+    background-color: #333439;
+}
+
+/*---------- Rodapé ----------*/
+#rodape {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
     background-color: #2c2d32;
     color: #dedfe4;
-  }
 }
+
+#contato {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 50px;
+}
+
+/*---------- MEDIA QUERY ----------*/
+@media screen and (max-width: 750px) {
+    html,
+    body {
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+
+    /* --------- navbar ------------*/
+    .header {
+        height: 125px;
+        padding: 10px 20px 0px 20px;
+    }
+
+    .hamburguer {
+        display: block;
+    }
+
+    .nav-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 20vh;
+        background-color: #333439;
+        clip-path: circle(0px at 90% -15%);
+        transition: 1s ease-out;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
+    }
+
+    .nav.active .nav-list {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+
+    /* --------------- main ----------------*/
+    #container-principal {
+        padding: 10px 20px 20px 20px;
+        margin-bottom: 120px;
+        margin-top: 30px;
+    }
+
+    #projetos-frontend, #projetos-backend {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 30px;
+        background-color: #2c2d32;
+        color: #dedfe4;
+    }
+
+    .meus-projetos {
+        height: 570px;
+        width: 250px;
+        padding: 5px;
+        margin-top: 40px;
+        border-radius: 20px;
+        box-shadow: 1px 1px 1px 1px #d19f4a;
+        background-color: #333439;
+    }
+
+    #habilidades {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #333439;
+        color: #dedfe4;
+    }
+
+    .contato {
+        margin-bottom: 10px;
+    }
+
+    #rodape {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        background-color: #2c2d32;
+        color: #dedfe4;
+    }
+}
+
